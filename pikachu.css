@@ -1,0 +1,91 @@
+body {
+    background: #181818;
+    transition: all 0.3s ease-in-out;
+}
+img {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.pikachu-container,
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+}
+
+.pikachu-container {
+    padding-top: 10vh;
+    margin: 2rem 0;
+    width: 100vw
+}
+.searchbar {
+    position: fixed;
+    left: 3rem;
+    top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#pokesearch {
+    transition: all 0.3s ease-in-out;
+    border: none;
+    background: #3c3c3c;
+    color: #4acd98;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    width: 70%;
+}
+#pokesearch::placeholder {
+    transition: all 0.3s ease-in-out;
+}
+    #pokesearch:hover {
+        background: #565656;
+    }
+    #pokesearch:hover::placeholder {
+        color: white;
+    }
+    #pokesearch:focus {
+        background: #181818;
+        outline: #4acd98;
+    }
+    #pokesearch:focus::placeholder {
+        color: #181818;
+    }
+button {
+    transition: all 0.3s ease-in-out;
+    border: none;
+    background: #4acd98;
+    color: #3c3c3c;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    width: 30%;
+}
+    button:hover {
+        background: #181818;
+        color: #4acd98;
+        transform: translateY(-5px);
+    }
+button.flicker,
+#pokesearch.flicker {
+    transition: all 0s;
+    background: #ffd8a3;
+    color: #3c3c3c;
+}
+body.flicker {
+    transition: all 0s;
+    background: #343434;
+}
+#clear.flicker {
+    transition: all 0s;
+    background: #f9003a;
+    color: #f9c2c0;
+}
+button#clear {
+    background: black;
+    color: #8f0025
+}
