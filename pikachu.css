@@ -78,7 +78,7 @@ button.flicker,
 }
 body.flicker {
     transition: all 0s;
-    background: #343434;
+    background: #141414;
 }
 #clear.flicker {
     transition: all 0s;
