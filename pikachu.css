@@ -5,6 +5,7 @@ body {
 img {
     transition: all 0.3s ease-in-out;
     opacity: 0;
+    height: 10vw;
 }
 
 .pikachu-container,
@@ -19,7 +20,7 @@ img {
 .pikachu-container {
     padding-top: 10vh;
     margin: 2rem 0;
-    width: 100vw
+    width: 100vw;
 }
 .searchbar {
     position: fixed;
