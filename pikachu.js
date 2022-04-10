@@ -34,7 +34,7 @@ function revealNewPokemon() {
 }
 
 function getAndRevealPokemon() {
-    const searchTarget = document.querySelector('#pokesearch').value
+    const searchTarget = document.querySelector('#pokesearch').value.toLowerCase().trim()
     console.log(searchTarget)
     const pokeURL = `${pokeAPI}${searchType}${searchTarget}`
     getPokemon(pokeURL)
