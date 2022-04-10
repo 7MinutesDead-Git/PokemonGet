@@ -68,7 +68,7 @@ button {
 }
     button:hover {
         background: #181818;
-        color: #4acd98;
+        color: #95f8d1;
         transform: translateY(-5px);
     }
 button.flicker,
@@ -89,4 +89,8 @@ body.flicker {
 button#clear {
     background: black;
     color: #8f0025
+}
+button#clear:hover {
+    background: #8f0025;
+    color: #cd506a
 }
