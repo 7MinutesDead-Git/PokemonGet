@@ -20,6 +20,10 @@ function getPokemon(reqURL) {
             console.log(json)
             renderPokemon(json)
         })
+        .then(() => {
+            // A slight delay so the animation has time to play.
+            setTimeout(revealNewPokemon, 50)
+        })
         .catch(error => {
             console.log(`Error when fetching: ${error}`)
         })
@@ -34,7 +38,6 @@ function getAndRevealPokemon() {
     console.log(searchTarget)
     const pokeURL = `${pokeAPI}${searchType}${searchTarget}`
     getPokemon(pokeURL)
-    setTimeout(revealNewPokemon, 50)
 }
 
 function flashElements(...elements) {
