@@ -2,12 +2,16 @@ body {
     background: #181818;
     transition: all 0.3s ease-in-out;
     user-select: none;
+    font-family: "Gill Sans MT";
+    font-size: 1.2rem;
 }
+
 img {
     transition: all 0.3s ease-in-out;
     opacity: 0;
     height: 10vw;
 }
+
 img#loading {
     display: none;
     opacity: 1;
@@ -21,13 +25,14 @@ img#loading {
     justify-content: center;
     flex-wrap: wrap;
     transition: all 0.3s ease-in-out;
+    margin: 10vh 0;
 }
 
 .pikachu-container {
     padding-top: 10vh;
-    margin: 2rem 0;
     width: 100vw;
 }
+
 .searchbar {
     position: fixed;
     left: 3rem;
@@ -36,6 +41,7 @@ img#loading {
     align-items: center;
     justify-content: space-between;
 }
+
 #pokesearch {
     transition: all 0.3s ease-in-out;
     border: none;
@@ -46,22 +52,28 @@ img#loading {
     height: 2.5rem;
     width: 70%;
 }
+
 #pokesearch::placeholder {
     transition: all 0.3s ease-in-out;
 }
-    #pokesearch:hover {
-        background: #565656;
-    }
-    #pokesearch:hover::placeholder {
-        color: white;
-    }
-    #pokesearch:focus {
-        background: #181818;
-        outline: #4acd98;
-    }
-    #pokesearch:focus::placeholder {
-        color: #181818;
-    }
+
+#pokesearch:hover {
+    background: #565656;
+}
+
+#pokesearch:hover::placeholder {
+    color: white;
+}
+
+#pokesearch:focus {
+    background: #181818;
+    outline: #4acd98;
+}
+
+#pokesearch:focus::placeholder {
+    color: #181818;
+}
+
 button {
     transition: all 0.3s ease-in-out;
     border: none;
@@ -72,34 +84,41 @@ button {
     height: 2.5rem;
     width: 30%;
 }
-    button:hover {
-        background: #181818;
-        color: #95f8d1;
-        transform: translateY(-5px);
-    }
+
+button:hover {
+    background: #181818;
+    color: #95f8d1;
+    transform: translateY(-5px);
+}
+
 button.flicker,
 #pokesearch.flicker {
     transition: all 0s;
     background: #ffd8a3;
     color: #3c3c3c;
 }
+
 body.flicker {
     transition: all 0s;
     background: #141414;
 }
+
 #clear.flicker {
     transition: all 0s;
     background: #f9003a;
     color: #f9c2c0;
 }
+
 button#clear {
     background: black;
     color: #8f0025
 }
+
 button#clear:hover {
     background: #8f0025;
     color: #cd506a
 }
+
 .error-text {
     transition: opacity 10s ease;
     color: #cd506a;
@@ -107,6 +126,7 @@ button#clear:hover {
     line-height: 1.5rem;
     font-size: 1.5rem;
 }
+
 .error-text.flicker {
     opacity: 1;
     transition: all 0s;
@@ -122,10 +142,12 @@ button#clear:hover {
     height: 80px;
     opacity: 0;
 }
+
 .lds-roller div {
     animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     transform-origin: 40px 40px;
 }
+
 .lds-roller div:after {
     content: " ";
     display: block;
@@ -136,66 +158,84 @@ button#clear:hover {
     background: #4acd98;
     margin: -4px 0 0 -4px;
 }
+
 .lds-roller div:nth-child(1) {
     animation-delay: -0.036s;
 }
+
 .lds-roller div:nth-child(1):after {
     top: 63px;
     left: 63px;
 }
+
 .lds-roller div:nth-child(2) {
     animation-delay: -0.072s;
 }
+
 .lds-roller div:nth-child(2):after {
     top: 68px;
     left: 56px;
 }
+
 .lds-roller div:nth-child(3) {
     animation-delay: -0.108s;
 }
+
 .lds-roller div:nth-child(3):after {
     top: 71px;
     left: 48px;
 }
+
 .lds-roller div:nth-child(4) {
     animation-delay: -0.144s;
 }
+
 .lds-roller div:nth-child(4):after {
     top: 72px;
     left: 40px;
 }
+
 .lds-roller div:nth-child(5) {
     animation-delay: -0.18s;
 }
+
 .lds-roller div:nth-child(5):after {
     top: 71px;
     left: 32px;
 }
+
 .lds-roller div:nth-child(6) {
     animation-delay: -0.216s;
 }
+
 .lds-roller div:nth-child(6):after {
     top: 68px;
     left: 24px;
 }
+
 .lds-roller div:nth-child(7) {
     animation-delay: -0.252s;
 }
+
 .lds-roller div:nth-child(7):after {
     top: 63px;
     left: 17px;
 }
+
 .lds-roller div:nth-child(8) {
     animation-delay: -0.288s;
 }
+
 .lds-roller div:nth-child(8):after {
     top: 56px;
     left: 12px;
 }
+
 @keyframes lds-roller {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -220,9 +260,11 @@ button#clear:hover {
         left: 0;
         top: 0;
     }
+
     #pokesearch {
         width: 100%;
     }
+
     button {
         width: 100%;
     }
