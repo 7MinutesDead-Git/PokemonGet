@@ -100,8 +100,8 @@ window.onload = () => {
         flashElements(searchButton, searchInput, document.body)
     })
     // Also submit on hitting enter.
-    searchInput.addEventListener('keyup', e => {
-        if (e.keyCode === 13) {
+    searchInput.addEventListener('keypress', e => {
+        if (e.key === "Enter") {
             toggleLoadingIcon()
             getAndRevealPokemon()
             flashElements(searchButton, searchInput, document.body)
